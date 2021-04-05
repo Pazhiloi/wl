@@ -4,7 +4,70 @@
 @import 'libs';
 @import 'global';
 
-
+.header{
+  &__inner{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #fff;
+    background-color: $accent1;
+  }
+}
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__item:not(:first-child){
+    margin-left: 15px;
+  }
+}
+.footer{
+  padding: 100px 0 50px;
+  &__top{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  &__item:not(:first-child){
+    margin-left: 100px;
+  }
+  &__title{
+    margin-bottom: 30px;
+    @extend %poppins-500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $title;
+  }
+  &__list-item:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &__link{
+    @extend %poppins-400;
+  }
+  &__logo{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text{
+    @extend %poppins-400;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 1018px;
+    width: 100%;
+  }
+}
 
 
 @import 'media';

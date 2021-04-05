@@ -3,6 +3,9 @@ body{
   height: 100%;
 }
 body{
+  @extend %poppins-400;
+  font-size: 18px;
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
   color: $default;
@@ -15,14 +18,21 @@ img{
   object-fit: cover;
 }
 .container{
-  max-width: 1270px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .title{
+  @extend %poppins-500;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 45px;
   color: $title;
+}
+a{
+  @extend %poppins-500;
+  font-size: 16px;
+  line-height: 22px;
+  color: $link;
 }
 

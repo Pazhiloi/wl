@@ -1,5 +1,21 @@
-$default: #2b2311;
-$accent: #ff004c;
-$title:#2b2311;
-$bg: #fff;
-$link: #000;
+$default: #5b6996;
+$accent1: #6957ed;
+$title:#0e0d4c;
+$bg: #f7f9ff;
+$reviews: #353456;
+$link: #0e0d4c;
+
+
+
+%roboto-500{
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+%poppins-500{
+  font-family: 'Poppins-Medium', sans-serif;
+  font-weight: 500;
+}
+%poppins-400{
+  font-family: 'Poppins-Regular', sans-serif;
+  font-weight: 400;
+}
