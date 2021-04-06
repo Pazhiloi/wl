@@ -6,7 +6,7 @@
 
 .header{
   &__inner{
-    padding-top: 30px;
+    padding: 30px 0 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,221 @@
   }
   &__item:not(:first-child){
     margin-left: 15px;
+  }
+}
+.info{
+  padding-bottom: 150px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    max-width: 453px;
+    width: 100%;
+    @extend %poppins-500;
+    font-size: 38px;
+    line-height: 57px;
+    margin-bottom: 10px;
+    color: $title;
+  }
+  &__text{
+    margin-bottom: 30px;
+    max-width: 486px;
+    width: 100%;
+  }
+  &__buttons-title{
+    @extend %poppins-500;
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: $title;
+  }
+  &__buttons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &__button-wrapper{
+    width: 147px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button--purple{
+    background-color: $accent1;
+  }
+  &__button--pink{
+    background-color: $accent2;
+    margin-left: 30px;
+  }
+  &__button-text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 12px;
+  }
+  &__button-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 41px;
+    border-radius: 8px;
+    margin-right: 2px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  &__users,
+  &__view{
+    display: flex;
+    align-items: center;
+  }
+  &__avatars{
+    display: flex;
+  }
+  &__avatars-image{
+    border-radius: 50%;
+  }
+  &__avatars-link--second{
+    z-index: 3;
+  }
+  &__avatars-link--third{
+    z-index: 2;
+  }
+  &__avatars-link:first-child{
+    z-index: 4;
+  }
+  &__avatars-link:last-child{
+    z-index: 1;
+  }
+  &__avatars-link:not(:last-child){
+    margin-right: -14px;
+  }
+  &__avatars-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #ff8345;
+  }
+  &__avatars-svg{
+    width: 20px;
+    height: 20px;
+  }
+  &__view{
+    margin-left: 8px;
+  }
+  &__view-text{
+    @extend %roboto-500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__view-link{
+    @extend %poppins-400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $accent2;
+  }
+  &__product{
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    min-height: 460px;
+    &::before{
+      content: '';
+      position: absolute;
+      left: -78px;
+      top: 140px;
+      background-image: url('../images/background/bg.svg');
+      width: 142px;
+      height: 144px;
+      z-index: -1;
+    }
+  }
+  &__box-svg{
+    position: absolute;
+    top: -35px;
+    left: 100px;
+    z-index: -1;
+  }
+  &__review-wrapper{
+    position: absolute;
+    z-index: 2;
+    right: -80px;
+    top: 0;
+  }
+  &__review-box{
+    position: relative;
+    width: 244px;
+    height: 93px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(105, 105, 105, 0.08);
+    border-radius: 6px;
+    &::before{
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: -18px;
+      width: 31px;
+      height: 31px;
+      background-image: url('../images/icons/ellipse-red.svg');
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      left: -8px;
+      bottom: -8px;
+      width: 18px;
+      height: 18px;
+      background-image: url('../images/icons/ellipse-blue.svg');
+    }
+  }
+  &__rate-box{
+    position: absolute;
+    left: -40px;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 54px;
+    box-shadow: 0px 10px 20px rgba(105, 105, 105, 0.06);
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  &__rate-number{
+    margin-top: 4px;
+    @extend %poppins-500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $link;
+  }
+  &__review-avatar{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-right: 20px;
+  }
+  &__review-text{
+    max-width: 178px;
+    width: 100%;
+    @extend %poppins-500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $link;
   }
 }
 .footer{
