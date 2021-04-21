@@ -1,4 +1,18 @@
 $(function () {
+   $(".menu__link").on("click", function (e) {
+        e.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+   window.onscroll = function showHeader() {
+    var header = document.querySelector('.header__inner');
+    if(window.pageYOffset > 600) {
+      header.classList.add('header__fixed');
+    } else{
+      header.classList.remove('header__fixed');
+    }
+   }
   $('.star').rateYo({
     starWidth: "18px",
     readOnly: true,
